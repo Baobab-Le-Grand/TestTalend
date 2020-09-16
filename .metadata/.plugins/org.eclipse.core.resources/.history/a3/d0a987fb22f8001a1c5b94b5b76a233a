@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <parameters>
+    <routinesParameter id="_wupBUPgiEeq5oLdmLiOtew" name="TalendDataGenerator"/>
+    <routinesParameter id="_wvcSkPgiEeq5oLdmLiOtew" name="Numeric"/>
+    <routinesParameter id="_wveHwPgiEeq5oLdmLiOtew" name="TalendString"/>
+    <routinesParameter id="_wvf88PgiEeq5oLdmLiOtew" name="TalendStringUtil"/>
+    <routinesParameter id="_wvhyIPgiEeq5oLdmLiOtew" name="DataOperation"/>
+    <routinesParameter id="_wvjnUPgiEeq5oLdmLiOtew" name="TalendDate"/>
+    <routinesParameter id="_wvlcgPgiEeq5oLdmLiOtew" name="Relational"/>
+    <routinesParameter id="_wvnRsPgiEeq5oLdmLiOtew" name="StringHandling"/>
+    <routinesParameter id="_wvpG4PgiEeq5oLdmLiOtew" name="Mathematical"/>
+  </parameters>
+</talendfile:ProcessType>
