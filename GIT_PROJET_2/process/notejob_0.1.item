@@ -106,5 +106,5 @@
     <routinesParameter id="_PoN_8PhXEeq5m5TZX6ydbQ" name="StringHandling"/>
     <routinesParameter id="_PoPOEPhXEeq5m5TZX6ydbQ" name="Mathematical"/>
   </parameters>
-  <note opaque="true" posX="192" posY="96" sizeHeight="64" sizeWidth="96" text="test 1er modification remote&#xA;"/>
+  <note opaque="true" posX="192" posY="96" sizeHeight="64" sizeWidth="96" text="test 2eme modification remote&#xA;"/>
 </talendfile:ProcessType>
