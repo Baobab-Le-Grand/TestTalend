@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-hadoopcluster.token.records={"GIT_PROJET_2"\:{"HADOOPCLUSTER"\:{"types"\:{}}},"TEST_GIT"\:{"HADOOPCLUSTER"\:{"types"\:{}}},"TEST_INSTALL"\:{"HADOOPCLUSTER"\:{"types"\:{}}},"TEST_RECUP_FROM_GIT"\:{"HADOOPCLUSTER"\:{"types"\:{}}}}
+hadoopcluster.token.records={"GIT_PROJET_2"\:{"HADOOPCLUSTER"\:{"types"\:{}}},"TEST_GIT"\:{"HADOOPCLUSTER"\:{"types"\:{}}},"TEST_INSTALL"\:{"HADOOPCLUSTER"\:{"types"\:{}}},"TEST_RECUP_FROM_GIT"\:{"HADOOPCLUSTER"\:{"types"\:{}}},"TEST_RECUP_GIT_NOUVEAU_PROJET"\:{"HADOOPCLUSTER"\:{"types"\:{}}}}

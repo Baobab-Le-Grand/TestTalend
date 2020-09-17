@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:GZpyWBuziV3CGAn72BXA/wksjyXaYkDmBcQq45a1" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:AdRAk9XvNty5cexMFZoLfEnBRPWjzP3tAGU68UOX" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:dcuORbxy7/bkPoyU7r/tHJZyISCIEMcltyp6nZqp" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ek4g9jAnKoDT5rV+ouDWvN+GZBYM9vCd6/AWpvzL" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -106,5 +106,5 @@
     <routinesParameter id="_PoN_8PhXEeq5m5TZX6ydbQ" name="StringHandling"/>
     <routinesParameter id="_PoPOEPhXEeq5m5TZX6ydbQ" name="Mathematical"/>
   </parameters>
-  <note opaque="true" posX="192" posY="96" sizeHeight="64" sizeWidth="96" text="test 1er modification remote&#xA;"/>
+  <note opaque="true" posX="224" posY="96" sizeHeight="97" sizeWidth="225" text="test 2 eme modif locale&#xA;"/>
 </talendfile:ProcessType>
