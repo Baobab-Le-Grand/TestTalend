@@ -106,9 +106,5 @@
     <routinesParameter id="_PoN_8PhXEeq5m5TZX6ydbQ" name="StringHandling"/>
     <routinesParameter id="_PoPOEPhXEeq5m5TZX6ydbQ" name="Mathematical"/>
   </parameters>
-<<<<<<< HEAD
-  <note opaque="true" posX="192" posY="96" sizeHeight="64" sizeWidth="96" text="test 2 eme modif loc test 2eme modification remote&#xA;"/>
-=======
-  <note opaque="true" posX="192" posY="96" sizeHeight="64" sizeWidth="96" text="test 2eme modification remote&#xA;"/>
->>>>>>> dcaa229c195540b9959f1b0a299fe84d70a581e1
+  <note opaque="true" posX="192" posY="96" sizeHeight="64" sizeWidth="96" text="test fichie merged&#xA;"/>
 </talendfile:ProcessType>
