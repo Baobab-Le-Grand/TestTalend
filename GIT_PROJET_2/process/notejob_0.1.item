@@ -106,5 +106,6 @@
     <routinesParameter id="_PoN_8PhXEeq5m5TZX6ydbQ" name="StringHandling"/>
     <routinesParameter id="_PoPOEPhXEeq5m5TZX6ydbQ" name="Mathematical"/>
   </parameters>
-  <note opaque="false" posX="224" posY="96" sizeHeight="97" sizeWidth="225" text="test3 eme modif locale&#xA;"/>
+
+  <note opaque="false" posX="192" posY="96" sizeHeight="64" sizeWidth="96" text="merged file &#xA;"/>
 </talendfile:ProcessType>
