@@ -2940,3 +2940,305 @@ Il peut y avoir d'autres erreurs causées par la compatibilité avec la JVM. Vé
 !ENTRY org.talend.platform.logging 1 0 2020-09-17 15:10:23.639
 !MESSAGE 2020-09-17 15:10:23,639 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /GIT_PROJET_2_NOTEJOB_0.1/src/test/resources
 
+
+!ENTRY org.talend.platform.logging 4 0 2020-09-17 23:02:18.885
+!MESSAGE 2020-09-17 23:02:18,881 ERROR org.talend.commons.exception.CommonExceptionHandler  - Project 'TEST_INSTALL' is not open.
+
+!STACK 0
+java.lang.Exception: Project 'TEST_INSTALL' is not open.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:148)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:535)
+	at org.talend.designer.runprocess.java.TalendJavaProjectManager$4.run(TalendJavaProjectManager.java:541)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.talend.designer.runprocess.java.TalendJavaProjectManager.deleteEclipseProjectByNatureId(TalendJavaProjectManager.java:578)
+	at org.talend.designer.runprocess.DefaultRunProcessService.clearProjectRelatedSettings(DefaultRunProcessService.java:801)
+	at org.talend.designer.runprocess.RunProcessService.clearProjectRelatedSettings(RunProcessService.java:448)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.logOffProject(ProxyRepositoryFactory.java:2325)
+	at org.talend.rcp.intro.ApplicationWorkbenchWindowAdvisor$4.postShutdown(ApplicationWorkbenchWindowAdvisor.java:519)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:971)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:176)
+	at org.eclipse.ui.internal.Workbench.firePostShutdown(Workbench.java:968)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2980)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1161)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1410)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1383)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1641)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:1670)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1670)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1679)
+	at org.eclipse.ui.internal.WorkbenchWindow$4.close(WorkbenchWindow.java:535)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:577)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4319)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Shell.closeWidget(Shell.java:624)
+	at org.eclipse.swt.widgets.Shell.windowShouldClose(Shell.java:2445)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5986)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:235)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2158)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2414)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6113)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5352)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5504)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:131)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 4 0 2020-09-17 23:02:19.098
+!MESSAGE 2020-09-17 23:02:19,096 ERROR org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.apache.catalina.core.StandardContext.listenerStop] Exception sending context destroyed event to listener instance of class [org.apache.meecrowave.openwebbeans.OWBAutoSetup$EagerBootListener]
+
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at org.talend.sdk.component.runtime.manager.proxy.JavaProxyEnricherFactory$DelegatingSerializableHandler.invoke(JavaProxyEnricherFactory.java:98)
+	at com.sun.proxy.$Proxy167.close(Unknown Source)
+	at org.talend.sdk.component.runtime.manager.ComponentManager$Updater.lambda$onClose$45(ComponentManager.java:1619)
+	at java.base/java.util.Optional.ifPresent(Optional.java:176)
+	at org.talend.sdk.component.runtime.manager.ComponentManager$Updater.onClose(ComponentManager.java:1617)
+	at org.talend.sdk.component.container.ContainerManager$ContainerBuilder$1.lambda$null$0(ContainerManager.java:454)
+	at org.talend.sdk.component.container.ContainerManager.safeInvoke(ContainerManager.java:179)
+	at org.talend.sdk.component.container.ContainerManager.access$1200(ContainerManager.java:66)
+	at org.talend.sdk.component.container.ContainerManager$ContainerBuilder$1.lambda$close$1(ContainerManager.java:454)
+	at java.base/java.util.concurrent.CopyOnWriteArrayList.forEach(CopyOnWriteArrayList.java:807)
+	at org.talend.sdk.component.container.ContainerManager$ContainerBuilder$1.close(ContainerManager.java:454)
+	at java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4780)
+	at org.talend.sdk.component.container.ContainerManager.lambda$close$15(ContainerManager.java:357)
+	at org.talend.sdk.component.lifecycle.LifecycleSupport.closeIfNeeded(LifecycleSupport.java:35)
+	at org.talend.sdk.component.container.ContainerManager.close(ContainerManager.java:356)
+	at org.talend.sdk.component.runtime.manager.ComponentManager.close(ComponentManager.java:886)
+	at org.talend.sdk.component.server.service.ComponentManagerService.destroy(ComponentManagerService.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.webbeans.intercept.LifecycleInterceptorInvocationContext.proceed(LifecycleInterceptorInvocationContext.java:103)
+	at org.apache.webbeans.portable.InjectionTargetImpl.preDestroy(InjectionTargetImpl.java:359)
+	at org.apache.webbeans.component.AbstractOwbBean.destroy(AbstractOwbBean.java:179)
+	at org.apache.webbeans.context.AbstractContext.destroyInstance(AbstractContext.java:206)
+	at org.apache.webbeans.context.AbstractContext.destroyInstance(AbstractContext.java:192)
+	at org.apache.webbeans.context.ApplicationContext.destroy(ApplicationContext.java:72)
+	at org.apache.webbeans.web.context.WebContextsService.destroyApplicationContext(WebContextsService.java:643)
+	at org.apache.webbeans.web.context.WebContextsService.endContext(WebContextsService.java:232)
+	at org.apache.webbeans.web.lifecycle.WebContainerLifecycle.beforeStopApplication(WebContainerLifecycle.java:167)
+	at org.apache.webbeans.lifecycle.AbstractLifeCycle.stopApplication(AbstractLifeCycle.java:158)
+	at org.apache.webbeans.web.lifecycle.WebContainerLifecycle.stopApplication(WebContainerLifecycle.java:108)
+	at org.apache.webbeans.servlet.WebBeansConfigurationListener.contextDestroyed(WebBeansConfigurationListener.java:145)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4730)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5396)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:805)
+	at org.apache.meecrowave.Meecrowave.lambda$deployWebapp$14(Meecrowave.java:431)
+	at java.base/java.util.HashMap$Values.forEach(HashMap.java:1068)
+	at org.apache.meecrowave.Meecrowave.close(Meecrowave.java:999)
+	at org.talend.sdk.component.server.cli.EnhancedCli.run(EnhancedCli.java:64)
+	at org.talend.sdk.component.studio.ProcessManager$2.run(ProcessManager.java:288)
+Caused by: java.lang.IllegalStateException: java.lang.NoSuchMethodException: java.lang.invoke.MethodHandles$Lookup.<init>(java.lang.Class,int)
+	at org.talend.sdk.component.runtime.reflect.Defaults.findLookupConstructor(Defaults.java:84)
+	at org.talend.sdk.component.runtime.reflect.Defaults.<clinit>(Defaults.java:35)
+	... 42 more
+Caused by: java.lang.NoSuchMethodException: java.lang.invoke.MethodHandles$Lookup.<init>(java.lang.Class,int)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3427)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2631)
+	at org.talend.sdk.component.runtime.reflect.Defaults.findLookupConstructor(Defaults.java:78)
+	... 43 more
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-09-17 23:02:19.521
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2020-09-18 14:17:05.791 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -keyring /Users/sla/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/sla/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.compare.win32 4 0 2020-09-18 14:17:06.553
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.compare.win32 [3]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=win32)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:08.614
+!MESSAGE 2020-09-18 14:17:08,611 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: /Applications/TOSBD-7.3.1/studio/configuration/studio.keys
+
+
+!ENTRY org.eclipse.core.net 1 0 2020-09-18 14:17:09.013
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-09-18 14:17:09.086
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:11.812
+!MESSAGE 2020-09-18 14:17:11,811 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:12.321
+!MESSAGE 2020-09-18 14:17:12,321 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/TEST_RECUP_GIT_NOUVEAU_PROJET_ROUTINES: org.example.git_projet_2.code:routines:7.3.1 with classifier  to /TEST_RECUP_GIT_NOUVEAU_PROJET_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:20.241
+!MESSAGE 2020-09-18 14:17:20,240 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:22.670
+!MESSAGE 2020-09-18 14:17:22,670 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /GIT_PROJET_2_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:22.671
+!MESSAGE 2020-09-18 14:17:22,671 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /GIT_PROJET_2_ROUTINES/src/main/java overlaps with sources folder /GIT_PROJET_2_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:22.673
+!MESSAGE 2020-09-18 14:17:22,673 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /GIT_PROJET_2_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:22.673
+!MESSAGE 2020-09-18 14:17:22,673 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /GIT_PROJET_2_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:24.967
+!MESSAGE 2020-09-18 14:17:24,967 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - /Applications/TOSBD-7.3.1/studio/workspace/GIT_PROJET_2/poms/code/routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:24.968
+!MESSAGE 2020-09-18 14:17:24,968 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s /Applications/TOSBD-7.3.1/studio/configuration/maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:27.889
+!MESSAGE 2020-09-18 14:17:27,889 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com connecté à git_projet_2
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:28.715
+!MESSAGE 2020-09-18 14:17:28,714 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.613
+!MESSAGE 2020-09-18 14:17:38,613 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.615
+!MESSAGE 2020-09-18 14:17:38,615 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.622
+!MESSAGE 2020-09-18 14:17:38,622 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.624
+!MESSAGE 2020-09-18 14:17:38,624 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.626
+!MESSAGE 2020-09-18 14:17:38,625 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.628
+!MESSAGE 2020-09-18 14:17:38,628 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.630
+!MESSAGE 2020-09-18 14:17:38,629 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.641
+!MESSAGE 2020-09-18 14:17:38,641 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.671
+!MESSAGE 2020-09-18 14:17:38,671 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.683
+!MESSAGE 2020-09-18 14:17:38,683 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.708
+!MESSAGE 2020-09-18 14:17:38,708 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.711
+!MESSAGE 2020-09-18 14:17:38,710 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.716
+!MESSAGE 2020-09-18 14:17:38,716 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.718
+!MESSAGE 2020-09-18 14:17:38,718 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.723
+!MESSAGE 2020-09-18 14:17:38,723 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.726
+!MESSAGE 2020-09-18 14:17:38,725 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 2 0 2020-09-18 14:17:38.728
+!MESSAGE 2020-09-18 14:17:38,728 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: HDFS-LIB-CDH_5_4_LASTEST
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:41.238
+!MESSAGE 2020-09-18 14:17:41,237 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/TEST_RECUP_GIT_NOUVEAU_PROJET_ROUTINES: org.example.git_projet_2.code:routines:7.3.1 with classifier  to /TEST_RECUP_GIT_NOUVEAU_PROJET_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:41.262
+!MESSAGE 2020-09-18 14:17:41,262 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /GIT_PROJET_2_NOTEJOB_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:41.263
+!MESSAGE 2020-09-18 14:17:41,263 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /GIT_PROJET_2_NOTEJOB_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:41.264
+!MESSAGE 2020-09-18 14:17:41,264 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /GIT_PROJET_2_NOTEJOB_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-09-18 14:17:41.265
+!MESSAGE 2020-09-18 14:17:41,265 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /GIT_PROJET_2_NOTEJOB_0.1/src/test/resources
+
