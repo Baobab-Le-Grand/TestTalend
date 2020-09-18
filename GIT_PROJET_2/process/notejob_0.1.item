@@ -199,7 +199,7 @@
       <column defaultValue="" key="false" length="0" name="destinationDirectory" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <note opaque="false" posX="192" posY="96" sizeHeight="64" sizeWidth="96" text="merged file &#xA;"/>
+  <note opaque="true" posX="192" posY="96" sizeHeight="64" sizeWidth="96" text="online modif &#xA;"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
